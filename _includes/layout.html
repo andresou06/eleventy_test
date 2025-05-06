@@ -1,0 +1,126 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="robots" content="index, follow">
+  <meta name="author" content="clientWebsite">
+  <meta name="description" content="clientWebsite is the description of my client webiste">
+  <meta name="keywords" content="clientWebsite, businessX, XXXX, XXXXXX">
+
+  <meta property="og:title" content="clientWebsite">
+  <meta property="og:description" content="clientWebsite is the description of my client webiste ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clientWebsite.com">
+  <meta property="og:image" content="https://clientWebsite.com/Images/1.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="clientWebsite">
+  <meta name="twitter:description" content="clientWebsite is the description of my client webiste .">
+  <meta name="twitter:image" content="https://clientWebsite.com/Images/1.jpg">
+  <meta name="twitter:site" content="@clientWebsite">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./Images/favicon_io/site.webmanifest">
+<link rel="alternate" hreflang="en" href="https://clientWebsite.com/">
+ <link rel="alternate" hreflang="XX" href="https://clientWebsite.com/fr/">
+
+
+<link rel="canonical" href="https://clientWebsite.com/">    -->
+
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bebas+Neue&family=Berkshire+Swash&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Creepster&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Gruppo&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Giga:wght@100..900&family=Marcellus&family=Moon+Dance&family=Mr+Dafoe&family=Permanent+Marker&family=Press+Start+2P&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Rubik+Bubbles&family=Rubik+Mono+One&family=Satisfy&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">     
+
+<link rel="stylesheet" href="style.css">      
+
+<title>Home</title>
+
+   
+</head>
+<body>
+
+
+  <div class="wallpaper"></div>
+
+<!-- ########################## -->
+<!-- MOBILE ONLY -->
+
+<!-- ############################# -->
+<div class="stickyHeader">
+ 
+<h1> {{ title | default: My blog }}</h1>
+<header class="headers">
+
+<!-- ########################## -->
+<!-- Desktop ONLY -->
+ <!-- ############################# -->
+     <p class="sections" id="one">Home</p>
+     <p class="sections" id="two">Pricing</p>
+     <p class="sections" id="three">Blog</p>
+     <p class="sections" id="four">About</p>
+     <p class="sections" id="five">Contact</p>
+
+
+    </header>
+    <div class="lang">
+      <div class="indexLang"><p>English</p></div>
+      <div class="indexLang"><p>French</p></div>
+      <div class="indexLang"><p>Portuguese</p></div>
+
+        <header class="boxes fade">
+          <!-- <button class="boxLang">EN</button>  -->
+
+          <button class="boxLang" onclick="currentIndex(1)">English</button>
+
+          <button class="boxLang" onclick="currentIndex(2)">French</button>
+
+
+          <button class="boxLang" onclick="currentIndex(3)">Portuguese</button>
+        </header>
+</div>
+
+
+<img class="svg_btn" id="svg_btn" src="./Image/Favicon/Navigation/bars-solid.svg" width="35px" height="35px" alt="My navigation bar">
+
+
+<dialog class="nested_headers">
+  <button class="close_header">❌</button>
+  <header>
+
+    <p class="open_sect1">Home</p>
+     <p class="open_sect2">Pricing</p>
+     <p class="open_sect3">Blog</p>
+      <p class="open_sect4">About</p>
+      <p class="open_sect5">Contact</p>
+
+
+  </header>
+ </dialog>
+</div>
+ <!-- ########################## -->
+<!-- Main Desktop and Mobile -->
+ <!-- ############################# -->
+  <div class="firstViewI"></div>
+         <main class="fadeDrop">
+            {{ content }}
+
+       
+       </main>
+
+       <footer>
+<p id="date"></p>
+       </footer>
+
+<!-- <script src="script.js" defer></script> -->
+</body>
+</html>
+
+
+
+
+
